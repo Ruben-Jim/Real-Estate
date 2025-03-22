@@ -6,6 +6,7 @@ import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import { ToastContainer } from 'react-toastify';
 import Footer from './components/Footer'
+import NewProjects from './components/NewProjects'
 
 
 
@@ -15,7 +16,8 @@ const App = () => {
       <ToastContainer />
       <Header />
       {/*<About />*/}
-      <Projects />
+      {/*<Projects />*/}
+      <NewProjects />
       <Reviews />
       <Contact />
       <Footer />

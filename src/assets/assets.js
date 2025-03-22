@@ -16,6 +16,10 @@ import house_img_6 from './house_img_6.jpg'
 import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
+import pin from './pin.svg'
+import bed from './bed.svg'
+import toilet from './toilet.svg'
+import square from './square.svg'
 
 export const assets = {
   logo,
@@ -31,6 +35,10 @@ export const assets = {
   house_img_4,
   left_arrow,
   right_arrow,
+  pin,
+  bed,
+  toilet,
+  square
 }
 
 export const projectsData = [
@@ -38,37 +46,74 @@ export const projectsData = [
     title: "4016 E Kerckhoff Ave",
     price: "$419,900",
     location: "Fresno, California",
-    image: house_img_1
+    image: house_img_1,
+    status: "#76c520",
+    Stext: "For Sale",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "3",
+    BathNumber: "2",
+    SquareFt: "3450"
+
   },
   {
     title: "372 S Argyle Ave Unit 101",
     price: "$180,000",
     location: "Fresno, California",
-    image: house_img_2
+    image: house_img_2,
+    status: "#ff5a3d",
+    Stext: "Sold",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "2",
+    BathNumber: "1",
+    SquareFt: "2450"
   },
   {
     title: "4328 N Emerson Ave",
     price: "$440,000",
     location: "Fresno, California",
-    image: house_img_3
+    image: house_img_3,
+    status: "#76c520",
+    Stext: "For Sale",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "4",
+    BathNumber: "1",
+    SquareFt: "2450"
   },
   {
     title: "4467 E Brentwood Ave",
     price: "$285,000",
     location: "Fresno, California",
-    image: house_img_4
+    image: house_img_4,
+    status: "#ff5a3d",
+    Stext: "Sold",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "3",
+    BathNumber: "2",
+    SquareFt: "3450"
   },
   {
     title: "358 Tucker Ave",
     price: "$385,000",
     location: "Fresno, California",
-    image: house_img_5
+    image: house_img_5,
+    status: "#76c520",
+    Stext: "For Sale",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "3",
+    BathNumber: "2",
+    SquareFt: "3450"
   },
   {
     title: "4111 E Weldon Ave",
     price: "$330,000",
     location: "Fresno, California",
-    image: house_img_6
+    image: house_img_6,
+    status: "#ff5a3d",
+    Stext: "Sold",
+    Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    BedNumber: "3",
+    BathNumber: "2",
+    SquareFt: "3450"
   },
 
 ];
