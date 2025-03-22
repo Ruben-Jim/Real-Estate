@@ -53,35 +53,35 @@ const NewProjects = () => {
         <div className='flex gap-8 transition-transform duration-500 ease-in-out'
           style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)` }}
         >
-          {projectsData.map((project, index, isRed) => (
-            <div key={index} className='relative flex-shrink-0 w-full sm:w-1/3 mb-15'>
+          {projectsData.map((project, index,) => (
+            <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4 mb-15'>
               <a href="#" className='block aspect-square'>
                 <img src={project.image} alt={project.title} className='w-full h-full mb-14 object-cover' />
               </a>
               {/* For Sale or sold  */}
-              <div className={`text-white text-xs bg-[${project.status}] uppercase absolute top-3 right-3 pr-2 pl-2 pt-1 pb-1`}>{project.Stext}</div>
+              <div className={` bg-[${project.color}] text-white text-xs uppercase absolute top-3 right-3 pr-2 pl-2 pt-1 pb-1`} >{project.Stext}</div>
 
               {/* location 
-                <div className='mr-5 absolute top-82 right-47 flex flex-wrap-reverse items-center'>
+              <div className='mr-5 absolute top-82 right-47 flex flex-wrap-reverse items-center'>
                 <button className='h-auto flex gap-1'>
                   <img src={assets.pin} className='size-3.5 block m-auto' />
                   <address className='block text-white' >{project.location}</address>
                 </button>
-              </div>
-                
-              */}
+              </div>  */}
+
+
 
 
               {/* Content */}
-              <div className='pt-2 pr-1 pb-2.5 pl-1 border-b-1'>
+              < div className='pt-2 pr-1 pb-2.5 pl-1 border-b-1' >
                 <div className='text-orange-500 mb-1 ml-1.5  '>{project.price}</div>
                 <h3 className='mb-2 font-bold'>{project.title}</h3>
                 <p className='h-auto mb-3 text-[#5d737e] text-sm'>{project.Description}</p>
 
                 {/* Content-info */}
-                <div className=' flex flex-row ' >
+                < div className=' flex flex-row ' >
                   {/* Bedroom */}
-                  <div className='border-r-1 border-[#5d737e] mr-3 '>
+                  <div div className='border-r-1 border-[#5d737e] mr-3 ' >
                     <strong className='text-[#5d737e]'>{project.BedNumber}</strong>
                     <img src={assets.bed} className='inline-block mb-1 ml-1.5 size-4' />
                     <span className='block mr-2 text-[#5d737e]'>Bedrooms</span>
@@ -107,24 +107,13 @@ const NewProjects = () => {
               </div>
 
 
-            </div>
+            </div >
 
           ))}
 
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+        </div >
+      </div >
+    </div >
 
   )
 }
