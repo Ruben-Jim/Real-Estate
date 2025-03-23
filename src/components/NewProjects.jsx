@@ -4,6 +4,7 @@ import { assets, projectsData } from '../assets/assets'
 
 const NewProjects = () => {
 
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(1);
 
@@ -23,13 +24,11 @@ const NewProjects = () => {
   }, [])
 
   const nextProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % projectsData.length)
+    setCurrentIndex((prevIndex) => (prevIndex + 1.07) % projectsData.length)
   }
   const prevProject = () => {
     setCurrentIndex((prevIndex) => prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1)
   }
-
-
 
   return (
     <div className='container mx-auto py-4 pt-20 px-6 md:px-30 lg:px-12 my-20 w-full overflow-hidden' id='Homes'>
@@ -53,13 +52,16 @@ const NewProjects = () => {
         <div className='flex gap-8 transition-transform duration-500 ease-in-out'
           style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)` }}
         >
-          {projectsData.map((project, index,) => (
+          {projectsData.map((project, index) => (
+
+
+
             <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4 mb-15'>
               <a href="#" className='block aspect-square'>
                 <img src={project.image} alt={project.title} className='w-full h-full mb-14 object-cover' />
               </a>
               {/* For Sale or sold  */}
-              <div className={` bg-[${project.color}] text-white text-xs uppercase absolute top-3 right-3 pr-2 pl-2 pt-1 pb-1`} >{project.Stext}</div>
+              <div className={`${project.status === "available" ? 'bg-[#76c520]' : project.status === "sold" ? 'bg-[#ff5a3d]' : 'bg-[#808080]'} text-white text-xs uppercase absolute top-3 right-3 pr-2 pl-2 pt-1 pb-1`} >{project.Stext}</div>
 
               {/* location 
               <div className='mr-5 absolute top-82 right-47 flex flex-wrap-reverse items-center'>
@@ -101,21 +103,13 @@ const NewProjects = () => {
                     <span className='block mr-2 text-[#5d737e]'>Square Ft</span>
                   </div>
                 </div>
-
-
-
               </div>
-
-
             </div >
-
           ))}
-
         </div >
       </div >
     </div >
-
-  )
+  );
 }
 
 export default NewProjects
