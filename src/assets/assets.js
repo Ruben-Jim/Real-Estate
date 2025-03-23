@@ -59,7 +59,7 @@ export const projectsData = [
     title: "372 S Argyle Ave Unit 101",
     price: "$180,000",
     location: "Fresno, California",
-    image: housold,
+    image: house_img_2,
     status: "sold",
     Stext: "Sold",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
