@@ -24,7 +24,7 @@ const NewProjects = () => {
   }, [])
 
   const nextProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1.07) % projectsData.length)
+    setCurrentIndex((prevIndex) => (prevIndex + 1.05) % projectsData.length)
   }
   const prevProject = () => {
     setCurrentIndex((prevIndex) => prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1)

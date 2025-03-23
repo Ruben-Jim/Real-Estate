@@ -44,15 +44,15 @@ export const assets = {
 export const projectsData = [
   {
     title: "4016 E Kerckhoff Ave",
-    price: "$419,900",
+    price: "$381,900",
     location: "Fresno, California",
     image: house_img_1,
-    status: "available",
+    status: "sold",
     Stext: "For Sale",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
-    BedNumber: "3",
+    BedNumber: "4",
     BathNumber: "2",
-    SquareFt: "3450"
+    SquareFt: "1574"
 
   },
   {
@@ -63,21 +63,21 @@ export const projectsData = [
     status: "sold",
     Stext: "Sold",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
-    BedNumber: "2",
-    BathNumber: "1",
-    SquareFt: "2450"
+    BedNumber: "3",
+    BathNumber: "2",
+    SquareFt: "1150"
   },
   {
     title: "4328 N Emerson Ave",
     price: "$440,000",
     location: "Fresno, California",
     image: house_img_3,
-    status: "available",
+    status: "sold",
     Stext: "For Sale",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
     BedNumber: "4",
-    BathNumber: "1",
-    SquareFt: "2450"
+    BathNumber: "4",
+    SquareFt: "2414"
   },
   {
     title: "4467 E Brentwood Ave",
@@ -87,9 +87,9 @@ export const projectsData = [
     status: "sold",
     Stext: "Sold",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
-    BedNumber: "3",
-    BathNumber: "2",
-    SquareFt: "3450"
+    BedNumber: "2",
+    BathNumber: "1.5",
+    SquareFt: "1099"
   },
   {
     title: "358 Tucker Ave",
@@ -99,9 +99,9 @@ export const projectsData = [
     status: "available",
     Stext: "For Sale",
     Description: "Lorem Ipsum is simplt dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
-    BedNumber: "3",
+    BedNumber: "4",
     BathNumber: "2",
-    SquareFt: "3450"
+    SquareFt: "1476"
   },
   {
     title: "4111 E Weldon Ave",
