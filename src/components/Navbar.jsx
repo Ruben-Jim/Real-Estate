@@ -3,6 +3,11 @@ import { assets } from '../assets/assets'
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [showContact, setShowContact] = useState(false)
+
+  const handleClick = () => {
+    setShowContact(!showContact);
+  };
 
   useEffect(() => {
     if (showMobileMenu) {
@@ -24,7 +29,21 @@ const Navbar = () => {
           <a href="#Homes" className='cursor-pointer hover:text-gray-400'>Homes For Sale</a>
           <a href="#Reviews" className='cursor-pointer hover:text-gray-400'>Reviews</a>
         </ul>
-        <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign up</button>
+        <div>
+          <button
+            className='hidden bg-white px-8 py-2 rounded-full'
+            onClick={handleClick}
+          >
+            Contact Info
+          </button>
+          {showContact && (
+            <div className="absolute mt-2 p-4 bg-gray-100 rounded-lg shadow-lg z-10">
+              <p>Email: hector@picon.net</p>
+              <p>Phone: (559) 800-8000</p>
+              <p>DRE#: 01249686</p>
+            </div>
+          )}
+        </div>
         <img onClick={() => setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 ml-50 cursor-pointer' alt=""></img>
         {/* ------------ mobile-menu -------------*/}
         <div className={`md:hidden ${showMobileMenu ? 'fixed w-full' : 'h-0 w-0'}  right-0 top-0 bottom-0 overflow-hidden bg-black opacity-82 transition-all`}>
