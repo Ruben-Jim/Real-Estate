@@ -31,7 +31,7 @@ const Navbar = () => {
         </ul>
         <div>
           <button
-            className='hidden bg-white px-8 py-2 rounded-full'
+            className='hidden md:block bg-white px-8 py-2 rounded-full'
             onClick={handleClick}
           >
             Contact Info
