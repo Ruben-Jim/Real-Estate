@@ -24,7 +24,7 @@ const NewProjects = () => {
   }, [])
 
   const nextProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1.05) % projectsData.length)
+    setCurrentIndex((prevIndex) => (prevIndex + 1.) % projectsData.length)
   }
   const prevProject = () => {
     setCurrentIndex((prevIndex) => prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1)
@@ -49,7 +49,7 @@ const NewProjects = () => {
       {/* end of slider buttons */}
 
       <div className='overflow-hidden'>
-        <div className='flex gap-8 transition-transform duration-500 ease-in-out'
+        <div className='flex transition-transform duration-600 ease-in-out'
           style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)` }}
         >
           {projectsData.map((project, index) => (

@@ -4,3 +4,11 @@
 * {
   font-family: Outfit;
 }
+
+.slider-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+}
