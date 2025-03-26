@@ -56,7 +56,7 @@ const NewProjects = () => {
 
 
 
-            <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4 mb-15'>
+            <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4 mb-14 shadow-2xl pl-1 pr-1 pb-1'>
               <a href="#" className='block aspect-square'>
                 <img src={project.image} alt={project.title} className='w-full h-full mb-14 object-cover' />
               </a>
@@ -75,7 +75,7 @@ const NewProjects = () => {
 
 
               {/* Content */}
-              < div className='pt-2 pr-1 pb-2.5 pl-1 border-b-1' >
+              < div className='pt-2 pr-1 pb-16 pl-1 ' >
                 <div className='text-orange-500 mb-1 ml-1.5  '>{project.price}</div>
                 <h3 className='mb-2 font-bold'>{project.title}</h3>
                 <p className='h-auto mb-3 text-[#5d737e] text-sm'>{project.Description}</p>
